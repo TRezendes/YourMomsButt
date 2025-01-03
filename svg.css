@@ -1,0 +1,27 @@
+:root {
+    --fill-color: none;
+    --dark: #000044;
+    --light: #ffffff;
+    --stroke-color: var(--dark);
+}
+@media not (prefers-color-scheme: dark) {
+    :root {
+        --stroke-color: var(--dark);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --stroke-color: var(--light);
+    }
+}
+path {
+    fill: var(--fill-color);
+    stroke: var(--stroke-color);
+    stroke-width: 5px;
+    overflow: visible;
+}
+
+.#grid {
+    stroke-width: 1px;
+    stroke: #666666;
+}

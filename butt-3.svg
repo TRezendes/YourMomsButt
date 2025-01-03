@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="svg.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 1000 1000">
+    <g id="butt">
+        <path id="left-outer" d="
+            M 40 5
+            Q 0 100 0 600
+            Q 5 625 2 625
+            C 0 700 0 800 20 1000
+        " />
+        <!-- <path stroke="red" d="M 20 600 L 980 600" /> -->
+        <path id="right-outer" d="
+            M 960 5
+            Q 1000 100 1000 600
+            Q 995 625 998 625
+            C 1000 700 1000 800 980 1000
+        " />
+        <path id="left-cheek" d="
+            M 20 500
+            C 20 650 450 750 500 575
+            C 500 575 502 550 500 480
+        " />
+        <path id="right-cheek" d="
+            M 960 600
+            C 820 750 550 750 500 575
+            C 500 575 498 550 508 480
+        " />
+        <path id="left-leg" d="
+            M 500 575
+            L 500 1000
+        " />
+        <path id="right-leg" d="
+            M 500 575
+            L 500 1000
+        " />
+    </g>
+</svg>

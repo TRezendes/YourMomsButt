@@ -1,0 +1,26 @@
+:root {
+    --dark: #000044;
+    --light: #ffffff;
+    --color: var(--dark);
+    --background-color: var(--light);
+}
+@media not (prefers-color-scheme: dark) {
+    :root {
+        --color: var(--dark);
+        --background-color: var(--light);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: var(--light);
+        --background-color: var(--dark);
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+object {
+    overflow: visible;
+}
