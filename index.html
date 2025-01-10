@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html>
+    <!-- Your Mom's Butt -->
+    <!-- by 232 Software -->
     <head>
-        <link rel="stylesheet" href="default.css" />
-        <link rel="stylesheet" href="ymb.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/default.css" />
+        <link rel="stylesheet" href="css/ymb.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
         <title>Your Mom's Butt | Coming Soon!</title>
+
+        <meta name="author" content="Timothy Rezendes" />
+        <meta name="description" content="Stories and pictures of your moms' butts." />
+        <meta name="keywords" content="butts, children, moms, photos, pics, pictures, stories, storytelling" />
+
+        <meta property="og:title" content="Your Mom's Butt" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://YourMomsButt.net" />
+        <meta property="og:description" content="Stories and pictures of your moms' butts." />
+        <meta property="og:locale" content="en_US" />
+
+        <meta property="og:image" content="images/butt-1og.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Your Mom's Butt, Stories about family" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta property="og:image" content="images/butt-1ogsq.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Your Mom's Butt, Stories about family" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+
+        <meta property="twitter:image" content="images/butt-1og-twitter.png" />
+        <meta property="twitter:image:type" content="image/png" />
+        <meta property="twitter:image:alt" content="Your Mom's Butt, Stories about family" />
+        <meta property="twitter:image:width" content="1200" />
+        <meta property="twitter:image:height" content="675" />
+
+        <script>
+            function getRndInteger(min, max) {
+              return Math.floor(Math.random() * (max - min) ) + min;
+            }
+            function chooseButt() {
+                var buttName = "images/butt-" + getRndInteger(1, 4) + ".svg"
+                document.getElementById("static-butt").setAttribute("data", buttName)
+            }
+            chooseButt()
+        </script>
+
     </head>
     <body>
-        <div class="centered">
-            <object class="centered" data="butt-3.svg" title="butt"></object>
-            <h1>Coming Soon!</h1>
-            <h2>Your Mom's Butt!</h2>
+        <div class="centered font-dosis-600">
+            <object id=animated-butts class="centered" type="image/svg+xml" data="images/butt-anim.svg" title="butt">An SVG image that gradually shifts between different line drawings of butts.</object>
+            <object id=static-butt class="centered" type="image/svg+xml" data="images/butt-1.svg" title="butt">An SVG line drawing of a butt.</object>
+            <h1>Your Mom's Butt!</h1>
+            <h2>Coming Soon!</h2>
         </div>
+        <div id=footer>Copyright &copy;2025 <a href="https://232.software">232 Software</a></div>
+        <a rel="me" class="masto-verify" href="https://tech.lgbt/@TheADHDM">Mastodon</a>
     </body>
 </html>

@@ -1,7 +1,7 @@
+/* var(--light) & var(--dark) are defined in ymb.css */
+
 :root {
     --fill-color: none;
-    --dark: #000044;
-    --light: #ffffff;
     --stroke-color: var(--dark);
 }
 @media not (prefers-color-scheme: dark) {
@@ -20,8 +20,11 @@ path {
     stroke-width: 5px;
     overflow: visible;
 }
+/* animate {
+    dur: 10s;
+} */
 
-.#grid {
+#grid {
     stroke-width: 1px;
     stroke: #666666;
 }
